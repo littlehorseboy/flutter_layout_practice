@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 
+import 'button_section.dart';
+import 'title_section.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -17,7 +20,17 @@ class MyApp extends StatelessWidget {
       ),
       home: Scaffold(
         appBar: AppBar(title: const Text(appTitle)),
-        body: const Center(child: Text('Hello World')),
+        body: const SingleChildScrollView(
+          child: Column(
+            children: [
+              TitleSection(
+                name: 'Oeschinen Lake Campground',
+                location: 'Kandersteg, Switzerland',
+              ),
+              ButtonSection(),
+            ],
+          ),
+        ),
       ),
     );
   }
