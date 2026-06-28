@@ -26,7 +26,7 @@ class MyApp extends StatelessWidget {
           child: Column(
             children: [
               ImageSection(
-                image: 'images/lake.jpg',
+                image: 'assets/images/lake.jpg',
               ),
               TitleSection(
                 name: 'Oeschinen Lake Campground',
